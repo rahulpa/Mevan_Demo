@@ -14,7 +14,7 @@ public abstract class BaseTest implements IAutoConst{
 	{
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		driver=new ChromeDriver();
-		driver.get("http:/localhost");
+		driver.get("http:/localhost:9565");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	@AfterMethod
